@@ -1,10 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Casino Header</title>
+	<link rel="shortcut icon" href="/favicon.ico">
+	<link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-$END$
+
+<header class="header">
+	<div class="container">
+		<a href="/" class="logo">
+			<img src="/images/logo_irwin.svg" alt="Casino Logo" />
+		</a>
+
+		<div class="auth-buttons">
+			<a href="#" class="btn login-btn">Log In</a>
+			<a href="#" class="btn signup-btn">Sign Up</a>
+		</div>
+
+		<nav class="nav" id="navMenu">
+			<a href="#">Home</a>
+			<a href="#">Games</a>
+			<a href="#">Promotions</a>
+			<a href="#">Support</a>
+
+
+		</nav>
+
+		<button class="burger" id="burgerBtn" aria-label="Toggle menu">
+			<span></span>
+			<span></span>
+			<span></span>
+		</button>
+	</div>
+</header>
+
+<main class="main">
+	<section class="hero">
+		<div class="hero-content">
+			<h1>Top Online Casinos in Bangladesh – 2025</h1>
+			<p>Explore our expert reviews and start playing at trusted, secure, and high-payout casinos today. 100% verified and licensed platforms only.</p>
+			<a href="#casinos" class="cta-button">View Top Casinos</a>
+		</div>
+	</section>
+
+	<section class="features">
+		<div class="feature-item">
+			<h3>Fast Payouts</h3>
+			<p>Get your winnings quickly with local payment methods like bKash, Nagad & Rocket.</p>
+		</div>
+		<div class="feature-item">
+			<h3>Trusted Reviews</h3>
+			<p>We only list casinos that are tested and safe for players from Bangladesh.</p>
+		</div>
+		<div class="feature-item">
+			<h3>Exclusive Bonuses</h3>
+			<p>Claim welcome offers, no deposit bonuses, and free spins — available only here.</p>
+		</div>
+	</section>
+</main>
+
+
+
+<footer class="footer">
+	<div class="footer-container">
+		<!-- Колонка: О нас -->
+		<div class="footer-column">
+			<h4>About Us</h4>
+			<p>We provide honest reviews and up-to-date information about the best online casinos in Bangladesh. Play responsibly.</p>
+		</div>
+
+		<!-- Колонка: Быстрые ссылки -->
+		<div class="footer-column">
+			<h4>Quick Links</h4>
+			<ul>
+				<li><a href="#">Top Casinos</a></li>
+				<li><a href="#">Bonuses</a></li>
+				<li><a href="#">How to Deposit</a></li>
+				<li><a href="#">Support</a></li>
+			</ul>
+		</div>
+
+		<!-- Колонка: Юридическая информация -->
+		<div class="footer-column">
+			<h4>Legal</h4>
+			<ul>
+				<li><a href="#">Terms & Conditions</a></li>
+				<li><a href="#">Privacy Policy</a></li>
+				<li><a href="#">Responsible Gaming</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="footer-bottom">
+		<p>&copy; 2025 CasinoAdvisor. All rights reserved. 18+ | Play Responsibly</p>
+	</div>
+</footer>
+
+
+<script>
+	const burger = document.getElementById('burgerBtn');
+	const nav = document.getElementById('navMenu');
+
+	burger.addEventListener('click', () => {
+		nav.classList.toggle('nav--active');
+		burger.classList.toggle('burger--active');
+	});
+</script>
+
 </body>
 </html>
