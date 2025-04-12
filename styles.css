@@ -8,6 +8,19 @@
 body {
   font-family: Arial, sans-serif;
   color: var(--colors-base-text);
+	list-style: none;
+}
+
+ul {
+	padding: 10px;
+}
+
+li {
+	padding: 5px;
+}
+
+li::marker {
+	color:  #ff9900; /* цвет маркера */
 }
 
 a {
@@ -25,6 +38,7 @@ a {
   --colors-base-300: #361c6b;
   --colors-base-400: #442583;
   --colors-global-accent: #acff00;
+  --colors-global-yellow: #ffcc00;
 }
 
 /*header*/
@@ -88,6 +102,11 @@ a {
 
 /* Mobile */
 @media (max-width: 768px) {
+	.container {
+		padding: 15px 10px;
+	}
+
+
   .nav {
     display: none;
     flex-direction: column;
@@ -118,14 +137,13 @@ a {
 }
 
 .btn {
-  padding: 6px 14px;
+  padding: 10px 14px;
   font-size: 14px;
   font-weight: 600;
   text-decoration: none;
   border-radius: 100px;
   transition: background 0.3s ease;
   white-space: nowrap;
-  height: 35px;
   text-align: center;
 }
 
@@ -149,30 +167,38 @@ a {
   background-color: var(--colors-global-accent);
 }
 
+.link-href {
+	color: var(--colors-global-yellow);
+	text-decoration: underline;
+}
+
 /* Mobile */
 @media (max-width: 768px) {
   .auth-buttons {
     flex-direction: row;
+	  margin-left: 5px;
   }
 
   .btn {
     width: 100%;
     text-align: center;
   }
+
+	.logo img {
+		height: 30px;
+	}
 }
 
 
 
 /*main*/
 .main {
-  padding: 40px 20px;
+  padding: 40px 200px;
   background-color: var(--colors-base-bg);
-  color: #333;
 }
 
 /* Hero Section */
 .hero {
-  background: url('casino-banner.jpg') center/cover no-repeat;
   padding: 80px 20px;
   text-align: center;
   border-radius: 8px;
@@ -182,7 +208,6 @@ a {
 
 .hero::before {
   content: "";
-  background: rgba(0, 0, 0, 0.6);
   position: absolute;
   inset: 0;
   border-radius: 8px;
@@ -208,7 +233,8 @@ a {
 
 .cta-button {
   display: inline-block;
-  background-color: #ff9900;
+  background-color: #acff00;
+	color: var(--colors-base-bg);
   padding: 12px 24px;
   border-radius: 5px;
   text-decoration: none;
@@ -217,38 +243,52 @@ a {
 }
 
 .cta-button:hover {
-  background-color: #e68a00;
+  background-color: #acff00;
 }
 
-/* Features Section */
-.features {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
+.index {
+	background: url('images/jackpot-bg-tab.webp') center/cover no-repeat;
 }
 
-.feature-item {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 6px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-  flex: 1 1 280px;
-  max-width: 300px;
-  text-align: center;
+.slots {
+	background: url('images/main5.webp') center/cover no-repeat;
 }
 
-.feature-item h3 {
-  font-size: 20px;
-  margin-bottom: 10px;
+.aviator {
+	background: url('images/main2.webp') center/cover no-repeat;
 }
 
-.feature-item p {
-  font-size: 15px;
+.bets {
+	background: url('images/main3.webp') center/cover no-repeat;
+}
+
+.bonuses {
+	background: url('images/main4.webp') center/cover no-repeat;
+}
+
+.casino {
+	background: url('images/main6.webp') center/cover no-repeat;
+}
+
+.login {
+	background: url('images/main7.webp') center/cover no-repeat;
+}
+
+.app {
+	background: url('images/main8.webp') center/cover no-repeat;
+}
+
+.zeus {
+	background: url('images/main1.webp') center/cover no-repeat;
 }
 
 
-
+/* Mobile */
+@media (max-width: 768px) {
+	.main {
+		padding: 40px 25px;
+	}
+}
 
 /*footer*/
 
@@ -304,4 +344,49 @@ a {
   border-top: 1px solid #333;
   padding-top: 15px;
   font-size: 13px;
+}
+
+/* Общие стили для H2 и H3 */
+h2 {
+	font-size: 28px;
+	margin: 40px 0 20px;
+	text-align: center;
+	color: #fff;
+}
+
+h3 {
+	font-size: 22px;
+	margin-bottom: 15px;
+	color: var(--colors-global-yellow);
+}
+
+/* Секция: Контент */
+.section {
+	background-color: var(--colors-base-200);
+	padding: 40px 20px;
+	border-radius: 8px;
+	margin-bottom: 40px;
+	color: var(--colors-base-text);
+}
+
+.section p {
+	font-size: 16px;
+	line-height: 1.7;
+	margin-bottom: 15px;
+}
+
+/* Адаптив для секций */
+@media (max-width: 768px) {
+	h2 {
+		font-size: 24px;
+	}
+
+	h3 {
+		font-size: 20px;
+	}
+
+	.section {
+		padding: 25px 15px;
+	}
+
 }

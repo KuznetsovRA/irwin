@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Irwin Casino — Онлайн казино и ставки на спорт с бонусами</title>
+	<meta name="description" content="Irwin Casino — игровые автоматы, ставки на спорт, бонусы и фрибеты. Играй и выигрывай с лучшими предложениями прямо сейчас." />
+	<link rel="shortcut icon" href="/favicon.ico">
+	<link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+<header class="header">
+	<div class="container">
+		<a href="/index" class="logo">
+			<img src="/images/logo_irwin.svg" alt="Casino Logo" />
+		</a>
+
+		<div class="auth-buttons">
+			<a href="#" class="btn login-btn click-btn">Log In</a>
+			<a href="#" class="btn signup-btn click-btn">Sign Up</a>
+		</div>
+
+		<nav class="nav" id="navMenu">
+			<a href="/index">Main</a>
+			<a href="/casino">Casino</a>
+			<a href="/bets">Bet</a>
+			<a href="/bonuses">Bonuses</a>
+			<a href="/login">Login</a>
+			<a href="/mobile-app">App</a>
+			<a href="/slots">Slots</a>
+			<a href="/aviator">Aviator</a>
+			<a href="/zeus">Zeus</a>
+		</nav>
+
+		<button class="burger" id="burgerBtn" aria-label="Toggle menu">
+			<span></span>
+			<span></span>
+			<span></span>
+		</button>
+	</div>
+</header>
+
+<main class="main">
+	<section class="section">
+		<h1>Irwin Casino — О нас</h1>
+		<p>Irwin Casino — это надежная и безопасная онлайн-платформа для азартных игр, предлагающая игрокам широкий выбор игр на деньги, включая игровые автоматы, слоты, ставки на спорт и многое другое. Мы стремимся обеспечить нашим пользователям лучшие условия для увлекательного и безопасного игрового опыта.</p>
+		<p>Наша миссия — предоставить игрокам качественные игровые продукты, честные условия игры и привлекательные бонусы. Мы работаем только с надежными провайдерами, чтобы каждый наш клиент получал удовольствие от игры и выигрыша.</p>
+		<p>Irwin Casino гордится своей лицензией, которая гарантирует, что все игры проводятся в соответствии с международными стандартами безопасности и справедливости. Мы постоянно совершенствуем наш сервис, чтобы удовлетворить потребности игроков и создать комфортную атмосферу для азартных игр.</p>
+		<p>Кроме того, Irwin Casino поддерживает принципы ответственной игры и предлагает пользователям различные инструменты для контроля над своим игровым процессом.</p>
+	</section>
+
+	<section class="section">
+		<h2>Контакты</h2>
+		<p>Если у вас возникли вопросы или проблемы, наша команда поддержки всегда готова помочь. Мы предоставляем несколько способов связи с нами:</p>
+
+		<h3>Электронная почта:</h3>
+		<p>support@irwincasino.com<br>
+			Напишите нам на почту, и мы оперативно ответим на ваши вопросы.</p>
+
+		<h3>Телефон горячей линии:</h3>
+		<p>+7(978)323-67-64<br>
+			Наши специалисты доступны для консультаций по телефону с 10:00 до 20:00 по местному времени.</p>
+
+		<h3>Чат на сайте:</h3>
+		<p>Используйте онлайн-чат для мгновенного ответа на ваши вопросы. Мы всегда рядом!</p>
+
+		<p>Irwin Casino ценит обратную связь от своих игроков и всегда готов помочь в решении любых вопросов, связанных с игрой и услугами на нашем сайте.</p>
+	</section>
+</main>
+
+<footer class="footer">
+	<div class="footer-container">
+		<!-- Колонка: О нас -->
+		<div class="footer-column">
+			<h4>О нас</h4>
+			<p>Irwin Casino — это надежная платформа для ставок и азартных игр, предлагающая своим пользователям лучшие условия для развлечения. Мы стремимся предоставить честные обзоры, актуальную информацию о спортивных ставках и казино, а также гарантировать безопасность и ответственную игру. Наша миссия — обеспечить комфорт и уверенность для каждого игрока. Играйте ответственно с Irwin Casino.</p>
+		</div>
+
+		<!-- Колонка: Быстрые ссылки -->
+		<div class="footer-column">
+			<h4>Быстрые ссылки</h4>
+			<ul>
+				<li><a href="/faq">Вопрос ответ</a></li>
+				<li><a href="/contacts">Контакты</a></li>
+			</ul>
+		</div>
+
+		<!-- Колонка: Юридическая информация -->
+		<div class="footer-column">
+			<h4>Юридическая информация</h4>
+			<ul>
+				<li><a href="/conditions">Условия использования</a></li>
+				<li><a href="/policy">Политика конфиденциальности</a></li>
+				<li><a href="/responsible-gaming">Ответственная игра</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="footer-bottom">
+		<p>&copy; 2025 CasinoAdvisor. All rights reserved. 18+ | Play Responsibly</p>
+	</div>
+</footer>
+
+<script>
+	const burger = document.getElementById('burgerBtn');
+	const nav = document.getElementById('navMenu');
+
+	burger.addEventListener('click', () => {
+		nav.classList.toggle('nav--active');
+		burger.classList.toggle('burger--active');
+	});
+</script>
+<script src="script.js"></script>
+</body>
+</html>
