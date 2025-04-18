@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://irwin-casino12.com/sitemap.xml

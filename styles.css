@@ -262,7 +262,7 @@ a {
 	background: url('images/main3.webp') center/cover no-repeat;
 }
 
-.bonuses {
+.bonuses-page {
 	background: url('images/main4.webp') center/cover no-repeat;
 }
 
@@ -280,6 +280,18 @@ a {
 
 .zeus {
 	background: url('images/main1.webp') center/cover no-repeat;
+}
+
+.zeus .hero-content,
+.aviator .hero-content,
+.slots .hero-content,
+.app .hero-content,
+.login .hero-content,
+.casino .hero-content,
+.bonuses-page .hero-content,
+.bets .hero-content {
+	background-color: rgb(0 0 0 / 72%);
+	color: white;
 }
 
 
