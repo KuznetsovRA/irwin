@@ -247,39 +247,39 @@ a {
 }
 
 .index {
-	background: url('images/jackpot-bg-tab.webp') center/cover no-repeat;
+	background: url('/images/jackpot-bg-tab.webp') center/cover no-repeat;
 }
 
 .slots {
-	background: url('images/main5.webp') center/cover no-repeat;
+	background: url('/images/main5.webp') center/cover no-repeat;
 }
 
 .aviator {
-	background: url('images/main2.webp') center/cover no-repeat;
+	background: url('/images/main2.webp') center/cover no-repeat;
 }
 
 .bets {
-	background: url('images/main3.webp') center/cover no-repeat;
+	background: url('/images/main3.webp') center/cover no-repeat;
 }
 
 .bonuses-page {
-	background: url('images/main4.webp') center/cover no-repeat;
+	background: url('/images/main4.webp') center/cover no-repeat;
 }
 
 .casino {
-	background: url('images/main6.webp') center/cover no-repeat;
+	background: url('/images/main6.webp') center/cover no-repeat;
 }
 
 .login {
-	background: url('images/main7.webp') center/cover no-repeat;
+	background: url('/images/main7.webp') center/cover no-repeat;
 }
 
 .app {
-	background: url('images/main8.webp') center/cover no-repeat;
+	background: url('/images/main8.webp') center/cover no-repeat;
 }
 
 .zeus {
-	background: url('images/main1.webp') center/cover no-repeat;
+	background: url('/images/main1.webp') center/cover no-repeat;
 }
 
 .zeus .hero-content,
