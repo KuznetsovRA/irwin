@@ -1,0 +1,13 @@
+RewriteEngine On
+
+# Если запрашиваемая ссылка не является файлом или директорией
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Тогда добавляем .html и загружаем страницу
+RewriteRule ^([a-zA-Z0-9_-]+)$ $1.html [L]
+
+# Редирект всех путей с / в конце на версию без /
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.+)/$ /$1 [R=301,L]
